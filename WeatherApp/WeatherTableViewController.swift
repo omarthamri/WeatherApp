@@ -59,7 +59,7 @@ class WeatherTableViewController: UITableViewController,UISearchBarDelegate {
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         let date = Calendar.current.date(byAdding: .day, value: section, to: Date())
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MMMM dd, YYYYY"
+        dateFormatter.dateFormat = "MMMM dd, YYYY"
         return dateFormatter.string(from: date!)
     }
     
